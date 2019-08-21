@@ -18,7 +18,9 @@ public class MyDataSoure implements DataSource {
 		}
 	}
 
-	private String url = "jdbc:mysql://localhost:3306/?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+	// private String url =
+	// "jdbc:mysql://localhost:3306/?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+	private String url = "jdbc:mysql://localhost/mytest?verifyServerCertificate=false&useSSL=false&serverTimezone=UTC";
 	private String user = "root";
 	private String passWord = "root";
 
@@ -26,7 +28,7 @@ public class MyDataSoure implements DataSource {
 		initPool();
 	}
 
-	// ³õÊ¼»¯·Å10¸ö
+	// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½10ï¿½ï¿½
 	private void initPool() {
 		try {
 			for (int i = 0; i < ConnectionPool.MAX; i++) {

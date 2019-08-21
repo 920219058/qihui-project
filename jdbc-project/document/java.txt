@@ -17,4 +17,8 @@ start方法，用于启动线程，java虚拟机自动调用该方法的run方�
 	
 	
 	
-	ngrok -config=ngrok.cfg -subdomain guzhen 9090
+	ngrok -config=ngrok.cfg -subdomain guzhen 8080
+	
+	127.0.0.1:8080/guzhen-Logistics/wx.do
+	127.0.0.1:8080/guzhen/wx.do    http://guzhen.ngrok.xiaomiqiu.cn/guzhen/wx.do
+	
